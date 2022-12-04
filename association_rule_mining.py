@@ -1,9 +1,9 @@
 # -------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Abdur Rahman
+# FILENAME: association_rule_mining.py
+# SPECIFICATION: takes in a data file containing transactions and uses association rule mining to find association rules between items and itemsets
 # FOR: CS 4210- Assignment #5
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 1 hour 30 minutes
 # -----------------------------------------------------------*/
 import numpy
 import pandas as pd
