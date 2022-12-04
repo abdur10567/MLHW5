@@ -28,6 +28,7 @@ X_training = df.iloc[:]
 maxSilhouetteCoef = 0
 kForMaxCoef = 2
 allCoefs = []
+bestKMeans = KMeans
 for i in range(2,21):
     kmeans = KMeans(n_clusters=i, random_state=0)
     kmeans.fit((X_training))
@@ -40,6 +41,7 @@ for i in range(2,21):
     if currentSilhouetteCoef > maxSilhouetteCoef:
         maxSilhouetteCoef = currentSilhouetteCoef
         kForMaxCoef = i
+        bestKMeans = kmeans
 
 
 
@@ -65,4 +67,4 @@ reshaped = np.array(df_test.values).reshape(1,len(df_test.index))[0]
 #Calculate and print the Homogeneity of this kmeans clustering
 #print("K-Means Homogeneity Score = " + metrics.homogeneity_score(labels, kmeans.labels_).__str__())
 #--> add your Python code here
-print("K-Means Homogeneity Score = " + metrics.homogeneity_score(reshaped, kmeans.labels_).__str__())
+print("K-Means Homogeneity Score = " + metrics.homogeneity_score(reshaped, bestKMeans.labels_).__str__())
