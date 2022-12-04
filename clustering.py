@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
 # AUTHOR: Abdur Rahman
 # FILENAME: clustering.py
-# SPECIFICATION:
+# SPECIFICATION: Take in data from a file and use the kmeans algorithm to group the data into clusters.
 # FOR: CS 4210- Assignment #5
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 1 hour
 #-----------------------------------------------------------*/
 
 #importing some Python libraries
